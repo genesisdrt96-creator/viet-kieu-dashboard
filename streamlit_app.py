@@ -8,9 +8,6 @@ st.set_page_config(page_title="Customer Insight Dashboard", layout="wide")
 
 st.title("📊 Chân Dung Khách Hàng Việt Kiều Mỹ 2026")
 
-# Sửa dòng này (Dòng số 11)
-file_path = "khach_hang_500.csv" 
-
 # Thành dòng này (Nếu file nằm trong thư mục trên GitHub)
 file_path = "Customer_Dashboard/khach_hang_500.csv"
 
@@ -83,3 +80,4 @@ else:
         with st.expander("🔍 Xem danh sách dữ liệu chi tiết"):
 
             st.dataframe(filtered_df)
+
