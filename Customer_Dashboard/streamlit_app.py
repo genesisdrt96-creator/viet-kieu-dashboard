@@ -9,7 +9,8 @@ st.set_page_config(page_title="Customer Insight Dashboard", layout="wide")
 st.title("📊 Chân Dung Khách Hàng Việt Kiều Mỹ 2026")
 
 # Kiểm tra file CSV có tồn tại không
-file_path = "khach_hang_500.csv"
+file_path = "khach_hang_500.csv" 
+df = pd.read_csv(file_path)
 
 if not os.path.exists(file_path):
     st.error(f"❌ Không tìm thấy file '{file_path}' trong thư mục hiện tại!")
@@ -79,3 +80,4 @@ else:
         # Xem bảng dữ liệu
         with st.expander("🔍 Xem danh sách dữ liệu chi tiết"):
             st.dataframe(filtered_df)
+
