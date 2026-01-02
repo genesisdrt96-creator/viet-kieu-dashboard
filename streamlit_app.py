@@ -9,7 +9,7 @@ st.set_page_config(page_title="Customer Insight Dashboard", layout="wide")
 st.title("📊 Chân Dung Khách Hàng Việt Kiều Mỹ 2026")
 
 # Thành dòng này (Nếu file nằm trong thư mục trên GitHub)
-file_path = "Customer_Dashboard/khach_hang_500.csv"
+file_path = "khach_hang_500.csv"
 
 if not os.path.exists(file_path):
     st.error(f"❌ Không tìm thấy file '{file_path}' trong thư mục hiện tại!")
@@ -80,4 +80,5 @@ else:
         with st.expander("🔍 Xem danh sách dữ liệu chi tiết"):
 
             st.dataframe(filtered_df)
+
 
